@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Source+Sans+3:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <section>
+      <h1>¡Hola! ¿Qué querés comprar?</h1>
+      <ul>
+        <li onclick="comprar(escudo)">Escudo de Poder <span>100G</span></li>
+        <li onclick="comprar(espada)">Espada Letal <span>180G</span></li>
+        <li onclick="comprar(estrella)">Estrella Ninja <span>90G</span></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Mi inventario</h2>
+      <ul id="inventario">
+        <!-- Acá vamos a cargar los items que estén en el array
+           inventario dinámicamente con el DOM -->
+      </ul>
+      <h2 id="coin">Coins: <span>500</span></h2>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
